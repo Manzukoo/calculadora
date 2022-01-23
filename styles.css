@@ -10,6 +10,11 @@ body {
     background: #1a1919;
 }
 
+@font-face {
+    font-family: digital;
+    src: url(Digital7-1e1Z.ttf);
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -48,4 +53,5 @@ body {
 .numero {
     font-size: 2.5em;
     overflow: hidden;
+    font-family: digital;
 }
