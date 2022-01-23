@@ -26,4 +26,26 @@ body {
     background: #1a1919;
     box-shadow: 0 0 50px 0 #ffffff0a;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pantalla {
+    width: 75%;
+    max-height: 6em;
+    height: 100%;
+    margin: 2em 0;
+    background: #80ff0046;
+    border-radius: 5px;
+    border: #1a1919 3px solid;
+    outline: #00000048 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero {
+    font-size: 2.5em;
+    overflow: hidden;
 }
