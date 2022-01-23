@@ -59,11 +59,27 @@ body {
 .botones {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
 }
 
 .btn {
     background: none;
+    border-radius: 5px;
+    border: black solid 2px;
     padding: 30px;
+    transition: all .2s;
+    box-shadow: 0 0 1px 0 #ffffff2d;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    box-shadow: 0 0 4px 0 #ffffff2d;
+}
+
+.btn:active {
+    background: rgba(0, 0, 0, 0.315);
+    transform: scale(1.1);
 }
 
 .suma {
