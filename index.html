@@ -12,35 +12,36 @@
     <div class="container">
         <div class="calculadora">
             <div class="pantalla">
-                <p class="numero"></p>
+                <p id="pantalla" class="numero"></p>
             </div>
             <div class="contenedor-botones">
                 <div class="botones botones-header">
-                    <button class="btn clear">CE</button>
+                    <button onclick="reiniciar()" class="btn clear">CE</button>
                 </div>
                 <div class="botones">
                     <button class="btn off">OFF</button>
-                    <button class="btn">√</button>
-                    <button class="btn">%</button>
-                    <button class="btn">÷</button>
-                    <button class="btn">7</button>
-                    <button class="btn">8</button>
-                    <button class="btn">9</button>
-                    <button class="btn">x</button>
-                    <button class="btn">4</button>
-                    <button class="btn">5</button>
-                    <button class="btn">6</button>
-                    <button class="btn">-</button>
-                    <button class="btn">1</button>
-                    <button class="btn">2</button>
-                    <button class="btn">3</button>
-                    <button class="btn suma">+</button>
-                    <button class="btn">0</button>
-                    <button class="btn">.</button>
-                    <button class="btn">=</button>
+                    <button onclick="calcular(this)" id="%" class="btn">%</button>
+                    <button onclick="calcular(this)" id="/" class="btn">÷</button>
+                    <button onclick="agregarNum(this)" id="7" class="btn">7</button>
+                    <button onclick="agregarNum(this)" id="8" class="btn">8</button>
+                    <button onclick="agregarNum(this)" id="9" class="btn">9</button>
+                    <button onclick="calcular(this)" id="*" class="btn">x</button>
+                    <button onclick="agregarNum(this)" id="4" class="btn">4</button>
+                    <button onclick="agregarNum(this)" id="5" class="btn">5</button>
+                    <button onclick="agregarNum(this)" id="6" class="btn">6</button>
+                    <button onclick="calcular(this)" id="-" class="btn">-</button>
+                    <button onclick="agregarNum(this)" id="1" class="btn">1</button>
+                    <button onclick="agregarNum(this)" id="2" class="btn">2</button>
+                    <button onclick="agregarNum(this)" id="3" class="btn">3</button>
+                    <button onclick="calcular(this)" id="+" class="btn suma">+</button>
+                    <button onclick="agregarNum(this)" id="0" class="btn">0</button>
+                    <button onclick="calcular(this)" id="." class="btn">.</button>
+                    <button onclick="resultado()" id="=" class="btn">=</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script type = "text/javascript" src = "script.js" ></script>
 </body>
 </html>
